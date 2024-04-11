@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Top from "../components/Top.astro";
+import Header from "../components/Header.astro";
+import Card1 from "../components/Card1.astro";
+import Card2 from "../components/Card2.astro";
+---
+
+<Layout title="Welcome to Astro.">
+	<Top />
+	<Header />
+	<div class="flex justify-around gap-10 p-20">
+		<Card2 />
+		<div class="flex gap-5">
+			<Card1 />
+			<Card1 />
+		</div>
+	</div>
+</Layout>
