@@ -4,16 +4,67 @@ import Top from "../components/Top.astro";
 import Header from "../components/Header.astro";
 import Card1 from "../components/Card1.astro";
 import Card2 from "../components/Card2.astro";
+import Title from "../components/Title.astro";
+import Title2 from "../components/Title2.astro";
+import Card3 from "../components/Card3.astro";
+import Card4 from "../components/Card4.astro";
+import Card5 from "../components/Card5.astro";
+import Container from "../components/Container.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<Top />
-	<Header />
-	<div class="flex justify-around gap-10 p-20">
+	<div class="bg-orange-50">
+		<Top />
+		<Header />
+		<div class="flex justify-around gap-10 p-20">
 		<Card2 />
-		<div class="flex gap-5">
+			<div class="flex gap-5">
 			<Card1 />
 			<Card1 />
+			</div>
 		</div>
 	</div>
+	<div>
+		<Title />
+		<div class="flex justify-around gap-6 p-20">
+			<Card3 />
+			<Card3 />
+			<Card3 />
+			<Card3 />
+		</div>
+	</div>
+
+	<Title2 />	
+		<div class="flex flex-col bg-orange-50">
+			<div class="bg-orange-50 flex justify-around gap-6 pt-20 px-20">
+				<Card4 />
+				<Card4 />
+				<Card4 />
+				<Card4 />
+				<Card4 />
+			</div>
+			<div class="flex justify-around gap-6 px-20 mb-2">
+				<Container />
+				<Container />
+				<Container />
+				<Container />
+				<Container />
+
+			</div>
+		</div>
+
+		<div>
+			<div class=" flex justify-around gap-6 px-60 pt-20">
+				<Card5 />
+				<Card5 />
+				<Card5 />
+				<Card5 />
+				<Card5 />
+				<Card5 />
+				<div class="bg-[rgba(245,245,245,1)] absolute mt-[1950px] ml-[630px] py-1 px-4 font-semibold text-[10px] top-0 left-0">
+					<p>INSTAGRAM</p>
+				</div>
+			</div>
+		</div>
+		
 </Layout>
